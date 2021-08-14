@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before anf after seudo selector</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+            font-family: 'Palette Mosaic', cursive;
+        }
+        header::before{
+            content: "";
+            background: url('https://source.unsplash.com/user/erondu/1600x900')no-repeat center center/cover;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .navigation {
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            padding: 2px 3px;
+            margin: 2px 3px;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            height: 300px;
+            margin: 5px 205px;
+            justify-content: center;
+            padding: 5px 5px;
+        }
+
+        h1 {
+            font-size: 4em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="list1">Home</li>
+                <li class="list2">Section</li>
+                <li class="list3">Services</li>
+                <li class="list4">Contcat us</li>
+                <li class="list5">Help</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+
+        <h1>
+            Welcome to coding
+        </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ipsam officia voluptatibus porro
+            quisquam
+            laborum perferendis alias iste est officiis vero? Saepe perferendis accusantium doloremque. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Impedit deleniti quam nihil autem. Magni eligendi quod
+            laudantium dolor in porro sed temporibus maiores eius assumenda.
+        </p>
+
+    </section>
+</body>
+
+</html>

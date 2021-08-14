@@ -1,0 +1,40 @@
+.item{
+    border:5px solid rgb(115, 184, 115);
+    margin: 10px 15px;
+    padding: 5px 5px;
+}
+.container{
+    width:750px;
+    border:6px solid rgb(168, 21, 65);
+    margin: 45px auto;
+    background-color: rosybrown;
+}
+body{
+    font-style: italic;
+    font-weight: 200;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    line-height: 15px;
+}
+#fruits{
+    float: left;
+    width: 40%;
+}
+#com{
+    float: left;
+    width: 45%;
+
+}
+#car{
+    /* float: left;
+    width: 12%; */
+    clear: both;
+
+}
+h1{
+    margin: auto;
+    /* width: 1750px; */
+    text-align: center;
+}
+*{
+    box-sizing: border-box;
+}
